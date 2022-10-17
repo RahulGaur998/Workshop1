@@ -45,12 +45,13 @@ public class TicTacToe {
         if (choice == 'X') {
             setPlayer('X');
             setComputer('O');
-        } else if (choice == 'O') {
+        }
+        if (choice == 'O') {
             setPlayer('O');
             setComputer('X');
-        } else {
+        }
+        if (choice != 'X' && choice != 'O') {
             System.out.println("Invalid Choice");
         }
     }
-
 }
